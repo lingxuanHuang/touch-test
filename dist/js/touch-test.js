@@ -18,12 +18,11 @@ function svgSmall(num){
     svg[num].style.left=svg[num].offX+"px";
     svg[num].style.top=svg[num].offY+"px";
     svg[num].style.margin=0+"px";
-
 }
 for(var i=0;i<svg.length;i++)
 {
     oplen=svg.length-1;//第几个显示控制
-    svg[i].setAttribute("svg-id",i)//生成svg-id便于控制;
+    svg[i].setAttribute("svg-id",i);//生成svg-id便于控制;
     svg[i].Rx=svg1[i].style.left||0;//获取最终位置
     svg[i].Ry=svg1[i].style.top||0;//获取最终位置
     svg[i].style.margin=10+"px";
@@ -34,8 +33,8 @@ for(var i=0;i<svg.length;i++)
         changeSVG[SVGlength]=svg[i];
         SVGlength++;
 
-       // 设置初始位置
-        svg[i].offX=0;
+       // 设置初始值
+        svg[i].offX=287;
         svg[i].offY=0;
     }
 
@@ -47,25 +46,18 @@ for(var i=0;i<svg.length;i++)
 for(var n=0;n<changeSVG.length;n++)
 {
     changeSVG[n].setAttribute("svgChange-id",n)//生成svg-id便于控制;
+    changeSVG[n].style.left=changeSVG[n].offX+"px";
+    changeSVG[n].style.top=changeSVG[n].offY+"px";
+
     if(n!=changeSVG.length-1)
         changeSVG[n].style.display="none";
     else
-
         changeSVG[n].style.display="block";
-}
-
-
-for(var j=0; j<svg.length;j++)
-{
-    svg[j].style.position="absolute";
-    svg[j].style.left=svg[j].offX;
-    svg[j].style.top=svg[j].offY;
 }
 
 touch.on("#touchActive","touchstart",function(e){
     var dragsuccess=false;
     svgId =  e.target.parentNode.getAttribute("svgChange-id");
-    //console.log("svgId :" +svgId);
     ele=changeSVG[svgId];
     console.log(ele);
     e.preventDefault();
@@ -111,6 +103,9 @@ touch.on(ele,"dragend",function(de){
             console.log("svgId :" +svgId);
             svgId--;
             changeSVG[svgId].style.display="block";
+        }
+        else{
+            document.getElementById("touchArea").style.display="none";
         }
         dragsuccess=false;
     }

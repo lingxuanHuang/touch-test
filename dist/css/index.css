@@ -2,13 +2,23 @@ html,
 body {
   margin: 0;
 }
+#touch {
+  position: relative;
+  width: 411px;
+}
 #touchBG {
   top: 0;
   left: 0;
   opacity: 0.2;
 }
-.opacity {
-  opacity: 0.8;
+#touchArea {
+  width: 118px;
+  height: 75px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #f9f9f9;
+  border: solid 1px #efefef;
 }
 #touchActive,
 #touchBG {
