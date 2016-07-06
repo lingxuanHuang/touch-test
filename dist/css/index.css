@@ -1,0 +1,98 @@
+html,
+body {
+  margin: 0;
+}
+#touchBG {
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+}
+.opacity {
+  opacity: 0.8;
+}
+#touchActive,
+#touchBG {
+  position: absolute;
+  width: 411px;
+  height: 600px;
+}
+#touchActive .rect .rect1,
+#touchBG .rect .rect1 {
+  fill: #dcb45f;
+}
+#touchActive .rect .rect2,
+#touchBG .rect .rect2 {
+  fill: #983e40;
+}
+#touchActive .rect .rect3,
+#touchBG .rect .rect3 {
+  fill: #bb7b7b;
+}
+#touchActive .rect .rect4,
+#touchBG .rect .rect4 {
+  fill: #fbcc88;
+}
+#touchActive .rect .rect5,
+#touchBG .rect .rect5 {
+  fill: #d7c65a;
+}
+#touchActive .rect .rect6,
+#touchBG .rect .rect6 {
+  fill: #2f241e;
+}
+#touchActive .rect .rect7,
+#touchBG .rect .rect7 {
+  fill: #edd58d;
+}
+#touchActive .rect .rect8,
+#touchBG .rect .rect8 {
+  fill: #5d3d26;
+}
+#touchActive .rect .rect9,
+#touchBG .rect .rect9 {
+  fill: #795940;
+}
+#touchActive .rect .rect10,
+#touchBG .rect .rect10 {
+  fill: #937670;
+}
+#touchActive .polygon .polygon1,
+#touchBG .polygon .polygon1 {
+  fill: #dcb45f;
+}
+#touchActive .polygon .polygon2,
+#touchBG .polygon .polygon2 {
+  fill: #d7c65a;
+}
+#touchActive .polygon .polygon3,
+#touchBG .polygon .polygon3 {
+  fill: #bb7b7b;
+}
+#touchActive .polygon .polygon4,
+#touchBG .polygon .polygon4 {
+  fill: #983e40;
+}
+#touchActive .circle .circleBG1,
+#touchBG .circle .circleBG1 {
+  fill: #d7c65a;
+}
+#touchActive .circle .circleBG2,
+#touchBG .circle .circleBG2 {
+  fill: #fbcc88;
+}
+#touchActive .circle .circleBG3,
+#touchBG .circle .circleBG3 {
+  fill: #983e40;
+}
+#touchActive .circle .circleBG4,
+#touchBG .circle .circleBG4 {
+  fill: #bb7b7b;
+}
+#touchActive .circle .circleBG5,
+#touchBG .circle .circleBG5 {
+  fill: #2f241e;
+}
+#touchActive svg,
+#touchBG svg {
+  cursor: pointer;
+}

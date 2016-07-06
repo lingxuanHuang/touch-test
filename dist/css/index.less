@@ -1,0 +1,63 @@
+@color1:#dcb45f;//土黄
+@color4:#d7c65a;//草黄
+@color3:#bb7b7b;//粉紫
+@color5:#fbcc88;//橙色-亮
+@color6:#983e40;//酒红-暗
+@color7:#edd58d;//淡黄
+@color8:#2f241e;//黑色
+@color9:#5d3d26;//咖啡色1-深
+@color10:#795940;//咖啡色2-浅
+@color11:#937670;//紫色
+html,body{margin:0}
+
+#touchBG{
+  top:0;
+  left:0;
+  opacity: 0.2;
+}
+//#touchActive{ left:200px;}
+.opacity{
+  opacity: 0.8;
+}
+#touchActive,#touchBG{
+  position: absolute;
+  width:411px;
+  height: 600px;
+  //margin:auto;
+  //background: #ece8dc;
+
+  //立方体部分
+  .rect{
+    .rect1{ fill:@color1;}
+    .rect2{ fill:@color6;}
+    .rect3{fill:@color3;}
+    .rect4{fill:@color5;}
+    .rect5{fill:@color4}
+    .rect6{fill:@color8;}
+    .rect7{fill:@color7;}
+    .rect8{fill:@color9;}
+    .rect9{fill:@color10;}
+    .rect10{fill:@color11;}
+  }
+
+  //多边形部分
+  .polygon{
+    .polygon1{ fill:@color1;}
+    .polygon2{ fill:@color4;}
+    .polygon3{fill:@color3;}
+    .polygon4{fill:@color6;}
+  }
+
+  //圆形部分
+  .circle{
+    .circleBG1 {fill:@color4;}
+    .circleBG2{fill:@color5;}
+    .circleBG3{fill:@color6;}
+    .circleBG4{fill:@color3;}
+    .circleBG5{fill:@color8;}
+  }
+
+  svg{ cursor: pointer;}
+}
+
+
